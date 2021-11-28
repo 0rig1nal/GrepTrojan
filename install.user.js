@@ -20,8 +20,8 @@
     script.type = 'text/javascript';
     link.type = 'text/css';
     link.rel = 'stylesheet';
-    script.src = 'https://cdn.jsdelivr.net/gh/0rig1nal/GrepTrojan@v5.1/GrepobotMinified.js';
-    link.href = 'https://cdn.jsdelivr.net/gh/0rig1nal/GrepTrojan@v5.1/Autobot.css';
+    script.src = 'https://cdn.jsdelivr.net/gh/0rig1nal/GrepTrojan@v5.3/GrepobotMinified.js';
+    link.href = 'https://cdn.jsdelivr.net/gh/0rig1nal/GrepTrojan@v5.3/Autobot.css';
     head.appendChild(script);
     head.appendChild(link);
     head.setAttribute('xhttps', 1);

@@ -224,8 +224,9 @@ ModuleManager = {
   initButtons: function (_0xa6b2x12) {
     var _0xa6b2xe = $('#' + _0xa6b2x12 + '_onoff');
     _0xa6b2xe['removeClass']('disabled');
-    _0xa6b2xe['on']('click', function (_0xa6b2x13) {
-      _0xa6b2x13['preventDefault']();
+    _0xa6b2xe['on']('click', 
+    function (windowName) {
+      windowName['preventDefault']();
       if (_0xa6b2x12 == 'Autoattack' && !Autobot['checkPremium']('captain')) {
         HumanMessage['error'](Game['premium_data']['captain']['name'] + ' ' + DM['getl10n']('premium')['advisors']['not_activated']['toLowerCase']() + '.');
         return false

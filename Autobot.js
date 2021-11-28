@@ -715,8 +715,7 @@ var Autobot = {
                 }
             }
         }
-    }, 100)
-})()]!= undefined) {
+    }, 100)})()]!= undefined) {
     if ($('.nui_main_menu ')['length '] && !$['isEmptyObject '](ITowns['towns '])) {
         clearInterval(_0xe20bx43);
         Autobot['initWindow ']();
@@ -734,19 +733,20 @@ var Autobot = {
                 })
         })
     } else {
-        if (/grepolis\.com\/start\?nosession/g['test '](window['
-    location ']['
-    href '])){clearInterval(_0xe20bx43);$['
-    getScript '](Autobot['
-    domain ']+ '
-    Evaluate.js ',function(){$['
-    when ']($['
-    getScript '](Autobot['
-    domain ']+ '
-    DataExchanger.js '),$['
-    getScript '](Autobot['
-    domain ']+ '
-    Redirect.js '),$.Deferred(function(_0xe20bx44){$(_0xe20bx44['
-    resolve '])}))['
-    done '](function(){Autobot['
-    checkAutoRelogin ']()})})}}}},100)})()
+        if (/grepolis\.com\/start\?nosession/g['test '](window['location ']['href '])){
+            clearInterval(_0xe20bx43);
+            $['getScript '](Autobot['domain ']+ 'Evaluate.js ',
+            function(){
+                $['when ']($['getScript '](Autobot['domain ']+ 'DataExchanger.js '),
+                $['getScript '](Autobot['domain ']+ 'Redirect.js '),
+                $.Deferred(function(_0xe20bx44){
+                    $(_0xe20bx44['resolve '])
+                }))['done '](function(){
+                    Autobot['checkAutoRelogin ']()
+                })
+            })
+        }
+    }
+}
+},100)
+})()

@@ -715,7 +715,7 @@ var Autobot = {
                 }
             }
         }
-    }, 100)})()]!= undefined) {
+    }, 100 != undefined )})()
     if ($('.nui_main_menu ')['length '] && !$['isEmptyObject '](ITowns['towns '])) {
         clearInterval(_0xe20bx43);
         Autobot['initWindow ']();
@@ -747,6 +747,3 @@ var Autobot = {
             })
         }
     }
-}
-},100)
-})()
